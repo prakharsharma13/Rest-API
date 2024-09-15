@@ -7,6 +7,16 @@ const PORT = 8000;
 //Middleware - Plugin
 app.use(express.urlencoded({ extended: false }));
 
+app.use((req, res, next) => {
+  fs.appendFile(
+    "log.txt",
+    `\n${Date.now()} : ${req.method} : ${req.path}`,
+    (err, data) => {
+      next();
+    }
+  );
+});
+
 //Routes
 app.get("/users", (req, res) => {
   const html = `
