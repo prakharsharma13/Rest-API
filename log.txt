@@ -1,2 +1,9 @@
 1726417656532 : GET : /api/users
 1726417671815 : GET : /api/users/1001
+
+1726458289051 : POST : /api/users
+1726458446819 : POST : /api/users
+1726458708508 : GET : /users
+1726458709396 : GET : /favicon.ico
+1726458853594 : GET : /api/users
+1726459029905 : GET : /api/users/66e7a9b1e8b7bcae4eef121e
